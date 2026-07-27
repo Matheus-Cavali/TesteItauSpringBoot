@@ -1,6 +1,7 @@
 package org.example.itauteste.Control;
 
 import jakarta.validation.Valid;
+import org.example.itauteste.Model.Estatistica;
 import org.example.itauteste.Model.Transacao;
 import org.example.itauteste.Service.TransacaoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,5 +28,6 @@ public class TransacaoControl {
         transacaoService.deletar();
         return ResponseEntity.ok().build();
     }
+
 
 }
