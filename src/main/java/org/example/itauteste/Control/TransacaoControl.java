@@ -22,4 +22,10 @@ public class TransacaoControl {
             return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
     }
 
+    @DeleteMapping
+    public ResponseEntity<Void> deletarTransacao(){
+        transacaoService.deletar();
+        return ResponseEntity.ok().build();
+    }
+
 }

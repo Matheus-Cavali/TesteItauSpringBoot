@@ -16,4 +16,8 @@ public class TransacaoService {
         transacoes.add(transacao);
         return true;
     }
+
+    public void deletar() {
+        transacoes.clear();
+    }
 }
